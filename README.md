@@ -33,7 +33,21 @@ Binary logistic regression requires a binary response variable, observations to 
 With 6,819 records, there is a relatively large sample size but I am using all 95 variables in my models. With a mean default of 3.15%, and 95 predictor variables, the ideal general sample size would be around 30,000.
 
 # Modeling - Random Forest Classifier, Gradient Boosted Trees, Extra Trees
-Each of these models is run with default parameters and then tuned. A comparison of model results is below.
+Each of these models was run with default parameters and then tuned. A comparison of model results is below.
 
 ![image](https://user-images.githubusercontent.com/85903905/152596788-f5012086-224f-40fc-833c-3dda1e83b8f0.png)
+
+# Tuned Gradiant Boost Model
+
+The tuned gradiant boost model had the best performace on f1-score. Parameters were tuned to:
+learning_rate=0.15
+max_depth=67
+max_features='sqrt'
+n_estimators=577
+criterion=friedman_mse
+
+Here are the top predictors used in this model, scored by scikit learn's 'feature_importances_' function:
+![image](https://user-images.githubusercontent.com/85903905/152597553-748037f0-e6d7-4d11-a522-ead8daa867e7.png)
+
+
 
