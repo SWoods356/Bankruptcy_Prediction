@@ -18,6 +18,8 @@ There are a lot of outliers in this data. There are 6 columns with 1,000 + outli
 
 All data was numeric, and standardized prior to modeling.
 
+SMOTE was used to balance the dataset, creating an equal number of bankrupt and non bankrupt cases. Doing so improved f1 scores dramatically - for my logistic regression model, this brought my f1 score from .2817 to 0.8969.
+
 # Modeling - Logistric Regression, Naive Bayes, and SVM.
 
 Logistic regression had the best performance, with an f1 score of .356. The naive bayes model had an f1 score of .1645, and the SVM model had a f1 score of .1356.
@@ -30,4 +32,5 @@ Binary logistic regression requires a binary response variable, observations to 
 
 With 6,819 records, there is a relatively large sample size but I am using all 95 variables in my models. With a mean default of 3.15%, and 95 predictor variables, the ideal general sample size would be around 30,000.
 
-There is collinearity among independant variables, with some correlations greater than .80. Reducing features for future models will promote sample size and multicollinearity assumptions are met.
+# Modeling - Random Forest Classifier, Gradient Boosted Trees, Extra Trees
+Each of these models is run with default parameters and then tuned. A comparison of model results is below.
