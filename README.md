@@ -22,7 +22,7 @@ SMOTE was used to balance the dataset, creating an equal number of bankrupt and 
 
 # Modeling - Logistric Regression, Naive Bayes, and SVM.
 
-Logistic regression had the best performance, with an f1 score of .356. The naive bayes model had an f1 score of .1645, and the SVM model had a f1 score of .1356.
+Logistic regression had the best performance, with an f1 score of .356. All results can arew shown in the summary table below.
 
 The SVM model was tuned to use an rbf kernel with a c of 100 and gamma of .0001.
 
