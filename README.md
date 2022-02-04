@@ -34,3 +34,6 @@ With 6,819 records, there is a relatively large sample size but I am using all 9
 
 # Modeling - Random Forest Classifier, Gradient Boosted Trees, Extra Trees
 Each of these models is run with default parameters and then tuned. A comparison of model results is below.
+
+![image](https://user-images.githubusercontent.com/85903905/152596788-f5012086-224f-40fc-833c-3dda1e83b8f0.png)
+
